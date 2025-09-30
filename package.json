@@ -1,0 +1,18 @@
+{
+  "name": "qa-tcms",
+  "version": "1.0.0",
+  "description": "QA Test Case Management System - Monorepo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["qa", "testing", "test-case-management", "react", "node", "mongodb"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
